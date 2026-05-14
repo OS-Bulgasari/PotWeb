@@ -1,0 +1,58 @@
+.Imgcontainer {
+    margin-top: 5%;
+    display: flex; /* 수평 나열의 핵심 */
+    flex-direction: column;    /* 박스 사이의 간격 */
+    gap: 50px;
+    margin-left: 3%;
+}
+
+.Hrow {
+    display: flex;       /* 내부의 Hbox와 DetailBox를 가로로 배치 */
+    width: 100%;         /* 부모 너비를 가득 채움 */
+    align-items: stretch; /* 두 박스의 높이를 동일하게 맞춤 */
+    gap: 10px;           /* 두 박스 사이의 간격 */
+}
+
+/* 기존 검은 박스 설정 유지 */
+.Hbox {
+    flex: 0 0 20%;      /* 가로 길이를 20%로 고정 */
+    height: 120px;
+    background-color: black;
+  /* ...기존 스타일... */
+}
+
+/* 오른쪽에 새로 생길 긴 박스 */
+.RightBox {
+    width: 75%;
+    height: 210px;
+    background-color: #f4f4f4; /* 구분하기 쉬운 색상 */
+    border: 1px solid #ccc;
+    display: flex;
+    align-items: center;
+    padding: 20px;
+}
+
+.Imgbox {
+    width: 20%;
+    height: 250px;
+    background-color: Black; /* 박스 배경은 유지 */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden; /* 글자가 박스 밖으로 나가는 것을 방지 */
+    border: 1px solid black;
+}
+
+.HTextFont {
+    display: block;
+    text-decoration: none; /* 밑줄 제거 */
+    color: white; /* 글자 색상 */
+    font-weight: bold;
+    font-size: 25px;
+    display: flex;
+    text-align: center;
+}
+
+.FS {
+    font-size: 120%;
+}

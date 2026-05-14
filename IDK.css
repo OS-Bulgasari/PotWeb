@@ -1,0 +1,138 @@
+/* 기본 여백 초기화 */
+body {
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+  background-color: rgb(248, 248, 248);
+}
+
+/* 상단 하늘색 바 설정 */
+.navbar {
+  background-color: Black; /* 하늘색 (SkyBlue) */
+  height: 90px;
+  display: flex;
+  align-items: center; /* 세로 중앙 정렬 */
+  width: 100%;
+}
+
+/* 내부 컨테이너 (중앙 정렬을 위한 틀) */
+.container {
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 20px;
+  position: relative; /* 자식인 back-button의 기준점이 됩니다 */
+  display: flex;
+  align-items: center;
+  justify-content: center; /* 메뉴들을 중앙으로 보냅니다 */
+}
+
+/* 탭 메뉴 스타일 */
+.nav-menu {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex; 
+  justify-content: center; /* 이 줄을 추가하세요! */
+  width: 100%;
+  gap: 15%; 
+}
+
+.nav-menu li a {
+  text-decoration: none; /* 밑줄 제거 */
+  color: white; /* 글자 색상 */
+  font-weight: bold;
+  font-size: 25px;
+  transition: color 0.3s;
+}
+
+.BackButton {
+  position: absolute;
+  left: 1.2%;
+  top: 50%;
+  transform: translateY(-50%);
+
+  text-decoration: none; /* 밑줄 제거 */
+  color: white; /* 글자 색상 */
+  font-weight: bold;
+  font-size: 25px;
+  transition: color 0.3s;
+}
+
+/* 마우스를 올렸을 때 효과 */
+.nav-menu li a:hover {
+  color: #f0f0f0;
+}
+
+.TextFont {
+  text-decoration: none; /* 밑줄 제거 */
+  color: black; /* 글자 색상 */
+  font-weight: bold;
+  font-size: 25px;
+  transition: color 0.3s;
+}
+
+.MenuTextFont {
+  text-decoration: none; /* 밑줄 제거 */
+  color: white; /* 글자 색상 */
+  font-weight: bold;
+  font-size: 25px;
+  transition: color 0.3s;
+}
+
+.tab-link.active {
+    color: #007bff;
+    font-weight: bold;
+    border-bottom: 2px solid #007bff;
+}
+
+/* 기본적으로 모든 탭 내용을 숨깁니다 */
+.tab-content {
+  display: none; 
+}
+
+/* 'active' 클래스가 붙은 탭만 화면에 보여줍니다 */
+.tab-content.active {
+  display: block;
+}
+
+.Hcontainer {
+  margin-top: 5%;
+  display: flex; /* 수평 나열의 핵심 */
+  justify-content: center;
+  gap: 10%;    /* 박스 사이의 간격 */
+}
+
+.Hbox {
+  width: 20%;
+  height: 120px;
+  background-color: Black; /* 박스 배경은 유지 */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden; /* 글자가 박스 밖으로 나가는 것을 방지 */
+}
+
+.HUnderBox {
+  width: 20%;
+  height: 200px;
+  background-color: Black; /* 박스 배경은 유지 */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden; /* 글자가 박스 밖으로 나가는 것을 방지 */
+}
+
+.BGText {
+  display: flex;
+  justify-content: center;
+  margin-top: 2%;
+}
+
+.HTextFont {
+  display: block;
+  text-decoration: none; /* 밑줄 제거 */
+  color: white; /* 글자 색상 */
+  font-weight: bold;
+  font-size: 25px;
+  display: flex;
+  text-align: center;
+}
