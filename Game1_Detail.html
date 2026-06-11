@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="Base.css">
+    <link rel="stylesheet" href="GameDetail.css">
+    <title>Find Me:Mory - Technical Detail</title>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <a href="Pot.html" class="BackButton">뒤로가기</a>
+        </div>
+    </nav>
+
+    <main class="detail-container">
+        <header class="project-header">
+            <h1>Find Me:Mory</h1>
+            <p class="summary">장르: 2D, 픽셀, 횡스크롤, 스토리<br>
+                작업 영역: ScriptableObject를 활용한 대화 시스템 및 구역 상호작용 로직 구현 및 미니게임 2종 설계.</p>
+        </header>
+
+        <section class="tech-section">
+            <div class="tech-card">
+                <h3>01. 게임 시연 영상</h3>
+                <p>Find Me:Mory의 간단한 시연 영상입니다.</p>
+                <div class="video-placeholder">영상 자료 또는 다이어그램 영역</div>
+            </div>
+
+            <div class="tech-card">
+                <h3>01. ScriptableObject 대화 시스템</h3>
+                <p>데이터와 로직의 분리를 위해 ScriptableObject를 사용하여 NPC별 대화 데이터를 관리했습니다.</p>
+                <pre><code>// 예시 코드: 대화 데이터 구조체
+[CreateAssetMenu]
+public class DialogueData : ScriptableObject {
+    public string npcName;
+    public List<string> lines;
+}</code></pre>
+            <div class="video-placeholder">인스펙터 대화 로그 작성 이미지</div>
+            <div class="video-placeholder">대화 시스템 시연 영상</div>
+            </div>
+
+            <div class="tech-card">
+                <h3>03. 상호작용 시스템</h3>
+                <p>Interface를 활용하여 Player와 상호작용 가능한 객체들을 추상화하였습니다.</p>
+                <div class="video-placeholder">영상 자료 또는 다이어그램 영역</div>
+            </div>
+        </section>
+    </main>
+</body>
+</html>

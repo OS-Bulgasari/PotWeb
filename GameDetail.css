@@ -1,0 +1,58 @@
+/* --- 상세 페이지 레이아웃 --- */
+.detail-container {
+    max-width: 900px;
+    margin: 120px auto 50px auto; /* 내비바와 겹치지 않게 상단 여백 확보 */
+}
+
+/* --- 헤더 섹션 --- */
+.project-header h1 {
+    font-size: 3rem;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.summary {
+    font-size: 1.2rem;
+    color: #666;
+    padding-bottom: 20px;
+    border-bottom: 2px solid #000000;
+}
+
+/* --- 기술 구현 카드 섹션 --- */
+.tech-section {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    margin-top: 50px;
+}
+
+.tech-card {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 12px;
+    border-left: 5px solid #000000;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+}
+
+/* --- 코드 블록 스타일 (프로그래머 감성) --- */
+pre {
+    background-color: #272822;
+    color: #f8f8f2;
+    padding: 20px;
+    border-radius: 8px;
+    overflow-x: auto;
+    font-family: 'Consolas', 'Courier New', monospace;
+}
+
+/* --- 자료 영상/이미지 영역 --- */
+.video-placeholder {
+    width: 100%;
+    height: 300px;
+    background-color: #eee;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px dashed #ccc;
+    color: #888;
+    margin-top: 20px;
+}

@@ -1,0 +1,67 @@
+/* 기본 초기화 */
+body {
+    margin: 0;
+    font-family: 'Pretendard', 'Arial', sans-serif; /* 폰트 권장 */
+    background-color: #f4f7f6;
+    color: #333;
+}
+
+/* 상단 바 */
+.navbar {
+    background-color: #000;
+    height: 90px;
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.BackButton {
+    position: absolute;
+    left: 0;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+/* 본문 레이아웃 */
+.content-wrapper {
+    max-width: 900px;
+    margin: 50px auto;
+    padding: 0 20px;
+}
+
+.goal-section {
+    margin-bottom: 50px;
+}
+
+/* 카드 디자인 */
+.card {
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    line-height: 1.8;
+}
+
+h1 { color: #222; margin-bottom: 20px; }
+h3 { color: #555; border-bottom: 1px solid #eee; padding-bottom: 10px; }
+
+p { font-size: 18px; margin: 12px 0; }
+ul { padding-left: 20px; }
+li { font-size: 18px; margin-bottom: 10px; }
+
+/* 반응형 대응 */
+@media (max-width: 768px) {
+    .content-wrapper { margin: 20px auto; }
+    .card { padding: 20px; }
+}

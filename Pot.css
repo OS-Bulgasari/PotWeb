@@ -1,0 +1,96 @@
+/* --- 기본 레이아웃 --- */
+.Imgcontainer {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    margin-left: 3%;
+}
+
+.Hrow {
+    display: flex;
+    width: 90%;
+    align-items: stretch;
+    gap: 20px;
+}
+
+/* --- 이미지 박스 (테두리 포함) --- */
+.Imgbox {
+    width: 20%;
+    height: 200px;
+    background-color: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    border-radius: 8px;
+    cursor: pointer;
+    border: 3px solid #333; /* 이미지 테두리 설정 */
+    transition: 0.3s;
+}
+
+.Imgbox:hover {
+    border-color: #007bff; /* 마우스 호버 시 테두리 색상 변경 */
+}
+
+.Imgbox img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.Imgbox:hover img {
+    transform: scale(1.1);
+    filter: brightness(0.7);
+}
+
+/* --- 기술 상세 박스 --- */
+.RightBox {
+    width: 75%;
+    background-color: #fff;
+    border-left: 5px solid #000000;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+}
+
+/* --- 텍스트 스타일 --- */
+.FS {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #333;
+}
+
+.Title {
+    font-size: 1.5rem;
+    display: block;
+    margin-bottom: 10px;
+    color: #000;
+}
+
+.TechTag {
+    background-color: #e9ecef;
+    padding: 4px 10px;
+    border-radius: 4px;
+    font-size: 0.85rem;
+    font-weight: bold;
+    color: #495057;
+    margin-right: 5px;
+    display: inline-block;
+}
+
+.LinkBtn {
+    display: inline-block;
+    margin-top: 15px;
+    color: #007bff;
+    font-weight: bold;
+    text-decoration: none;
+    transition: 0.2s;
+}
+
+.LinkBtn:hover {
+    text-decoration: underline;
+    color: #0056b3;
+}
