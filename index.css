@@ -69,13 +69,13 @@ body {
     background: #007bff;
 }
 
-/* --- 콘텐츠 영역 --- */
+/* 기존 코드를 아래와 같이 수정 */
 .content-wrapper {
     position: relative;
     z-index: 100;
     margin-top: 150px;
     padding: 0 20px;
-    pointer-events: none;
+    pointer-events: auto; /* none에서 auto로 변경 */
 }
 
 .highlight-section {
